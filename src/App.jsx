@@ -1,8 +1,25 @@
-import './styles.css'
+import { Header } from './Components/Header'
+import { Post } from './Post'
+import { Sidebar } from './Components/Sidebar'
+
+import './Global.css'
+
+import styles from './App.module.css'
+
 
 export function App() {
   return (
-    <h1>SOU EUUUUUUUUUU</h1>
+    <div>
+      <Header />
+
+      <div className={styles.wrapper}>
+        <Sidebar />
+        <main>
+          <Post />
+          <Post />
+        </main>
+      </div>
+    </div>
   )
   
 }
